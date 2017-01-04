@@ -91,4 +91,46 @@ class EasyChunkLoader implements ChunkLoader{
 	public function getLevel(){
 		return $this->level;
 	}
+	
+	/**
+	 * This will be called when a Chunk is replaced by a new one
+	 *
+	 * @param FullChunk $chunk
+	 */
+	public function onChunkChanged(FullChunk $chunk){
+		/** @todo */
+	}
+	/**
+	 * This will be called when a registered chunk is loaded
+	 *
+	 * @param FullChunk $chunk
+	 */
+	public function onChunkLoaded(FullChunk $chunk){
+		/** @todo */
+	}
+	/**
+	 * This will be called when a registered chunk is unloaded
+	 *
+	 * @param FullChunk $chunk
+	 */
+	public function onChunkUnloaded(FullChunk $chunk){
+		/** @todo */
+	}
+	/**
+	 * This will be called when a registered chunk is populated
+	 * Usually it'll be sent with another call to onChunkChanged()
+	 *
+	 * @param FullChunk $chunk
+	 */
+	public function onChunkPopulated(FullChunk $chunk){
+		/** @todo */
+	}
+	/**
+	 * This will be called when a block changes in a registered chunk
+	 *
+	 * @param Block|Vector3 $block
+	 */
+	public function onBlockChanged(Vector3 $block){
+		/** @todo */
+	}
 }
