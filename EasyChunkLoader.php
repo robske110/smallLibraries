@@ -4,10 +4,12 @@ use pocketmine\level\ChunkLoader;
 use pocketmine\level\Level;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
+use pocketmine\level\format\Chunk;
 
 /**
   * @author robske_110
   * @license GNU LESSER GENERAL PUBLIC LICENSE v3
+  * @for API 3.0.0-ALPHA2
   */
 class EasyChunkLoader implements ChunkLoader{
 	private $id;
@@ -95,34 +97,34 @@ class EasyChunkLoader implements ChunkLoader{
 	/**
 	 * This will be called when a Chunk is replaced by a new one
 	 *
-	 * @param FullChunk $chunk
+	 * @param Chunk $chunk
 	 */
-	public function onChunkChanged(FullChunk $chunk){
+	public function onChunkChanged(Chunk $chunk){
 		/** @todo */
 	}
 	/**
 	 * This will be called when a registered chunk is loaded
 	 *
-	 * @param FullChunk $chunk
+	 * @param Chunk $chunk
 	 */
-	public function onChunkLoaded(FullChunk $chunk){
+	public function onChunkLoaded(Chunk $chunk){
 		/** @todo */
 	}
 	/**
 	 * This will be called when a registered chunk is unloaded
 	 *
-	 * @param FullChunk $chunk
+	 * @param Chunk $chunk
 	 */
-	public function onChunkUnloaded(FullChunk $chunk){
+	public function onChunkUnloaded(Chunk $chunk){
 		/** @todo */
 	}
 	/**
 	 * This will be called when a registered chunk is populated
 	 * Usually it'll be sent with another call to onChunkChanged()
 	 *
-	 * @param FullChunk $chunk
+	 * @param Chunk $chunk
 	 */
-	public function onChunkPopulated(FullChunk $chunk){
+	public function onChunkPopulated(Chunk $chunk){
 		/** @todo */
 	}
 	/**
