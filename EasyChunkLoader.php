@@ -46,7 +46,7 @@ class EasyChunkLoader implements ChunkLoader{
 	
 	/**
 	  * Call this to temporarily deactivate this chunkloader!
-	  * WARNING: IF YOU NO LONGER REQUIRE THE CHUNKLOADER CALL @link{SuperChunkLoader->unregister()}!
+	  * WARNING: IF YOU NO LONGER REQUIRE THE CHUNKLOADER CALL @link{EasyChunkLoader->unregister()}!
 	  */
 	public function deactivate(){
 		$this->active = false;
@@ -60,7 +60,7 @@ class EasyChunkLoader implements ChunkLoader{
 	}
 	
 	/**
-	  * This will try to free as much memory as possible. Please clear your references to this chunkloader also!
+	  * This will try to free as much memory as possible. You still have to clear your references to this instance!
 	  */
 	public function unregister(){
 		$this->active = false;
